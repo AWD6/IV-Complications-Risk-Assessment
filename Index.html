@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IV Complications Risk Assessment</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>IV Complications Risk Assessment</h1>
+      <p class="subtitle">แบบประเมินความเสี่ยงภาวะแทรกซ้อนจากการให้สารน้ำทางหลอดเลือดดำ</p>
+    </div>
+
+    <div class="two-column-layout">
+      <!-- Phlebitis Section -->
+      <section class="assessment-section phlebitis-section">
+        <h2 class="section-header">Phlebitis</h2>
+        <div class="factors-list" id="phlebitis-factors"></div>
+
+        <div class="score-summary" id="phlebitis-summary">
+          <div class="score-display">
+            <span class="score-label">คะแนนรวม:</span>
+            <span class="score-value" id="phlebitis-score">0</span>
+          </div>
+        </div>
+
+        <div id="phlebitis-guidelines" class="guidelines-box hidden"></div>
+      </section>
+
+      <!-- Extravasation Section -->
+      <section class="assessment-section extravasation-section">
+        <h2 class="section-header">Extravasation</h2>
+        <div class="factors-list" id="extravasation-factors"></div>
+
+        <div class="score-summary" id="extravasation-summary">
+          <div class="score-display">
+            <span class="score-label">คะแนนรวม:</span>
+            <span class="score-value" id="extravasation-score">0</span>
+          </div>
+        </div>
+
+        <div id="extravasation-guidelines" class="guidelines-box hidden"></div>
+      </section>
+    </div>
+
+    <button class="reset-btn" onclick="resetForm()">
+      <span class="reset-icon">↻</span>
+      รีเซ็ตทั้งหมด
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
